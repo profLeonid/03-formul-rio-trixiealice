@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Cadastro</title>
-    <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-        }
-      </style>
-  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Criar Conta</title>
 </head>
-<body>
-<div class="h-screen bg-red-600 flex-items-center justify-center"></div>
-<h1 class="text-4xl font-sans text-white text-center">
-    Criar conta
-</h1>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Container do Celular -->
+    <div class="w-full max-w-[360px] aspect-[9/16] bg-[#FF3131] flex flex-col items-center p-8 text-white shadow-2xl relative">
+        
+        <h1 class="text-4xl mt-12 mb-8 font-light">Criar Conta</h1>
+
+        <!-- Ícones Sociais -->
+        <div class="flex space-x-4 mb-6">
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black font-bold shadow-md cursor-pointer">f</div>
+                
+                <div class="w-12 h-12 bg-[#FF3131] rounded-full flex items-center justify-center text-white text-xl font-bold shadow-[0_5px_15px_rgba(0,0,0,0.4)] transform -translate-y-1 cursor-pointer">G</div>
+                
+                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black font-bold shadow-md cursor-pointer">in</div>
+            </div>
+            
+        </div>
+
+        <p class="text-xs mb-8 opacity-90">ou cadastre seu email</p>
+
+        <!-- Formulário -->
+        <form class="w-full space-y-4">
+            <input type="text" placeholder="Nome" class="w-full p-3 bg-white/100 text-gray-800 placeholder-gray-400 focus:outline-none">
+            <input type="email" placeholder="Email" class="w-full p-3 bg-white/100 text-gray-800 placeholder-gray-400 focus:outline-none">
+            <input type="password" placeholder="Senha" class="w-full p-3 bg-white/100 text-gray-800 placeholder-gray-400 focus:outline-none">
+            
+            <div class="flex justify-center pt-4">
+                <button class="border-2 border-white rounded-full px-12 py-2 font-bold hover:bg-white hover:text-[#FF3131] transition-all">
+                    CADASTRAR
+                </button>
+            </div>
+        </form>
+
+        <p class="mt-auto mb-8 text-sm">
+            Já tem conta? <a href="#" class="font-bold border-white">Login</a>
+        </p>
+
+    </div>
+
 </body>
 </html>
